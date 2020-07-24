@@ -13,6 +13,10 @@
         <button>
           <router-link to="/d" class="san">查看</router-link>
         </button>
+        <br />
+        <button>
+          <router-link to="/e" class="san">新增1</router-link>
+        </button>
       </div>
 
       <div class="right">

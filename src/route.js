@@ -5,6 +5,7 @@ import Home from "./pages/home.vue";
 import b from "./pages/b.vue";
 import c from "./pages/c.vue";
 import d from "./pages/d.vue";
+import e from "./pages/e.vue";
 
 
 // 要告诉 vue 使用 vueRouter
@@ -32,6 +33,9 @@ var router = new VueRouter({
                 },
                 {
                     path: '/d', name: 'd', component: d,
+                },
+                {
+                    path: '/e', name: 'e', component: e,
                 },
             ]
         },
