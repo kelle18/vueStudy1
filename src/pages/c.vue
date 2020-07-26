@@ -1,11 +1,29 @@
 <template>
   <div>
     <div class="Shouyue">
-      <p>总数量：180</p>
+      <p>总数量：{{num}}</p>
     </div>
   </div>
 </template>
 <script>
+const axios = require("axios");
+export default {
+  data() {
+    return {
+      num: 18,
+    };
+  },
+
+  methods: {},
+  mounted() {
+    let that = this;
+    axios.get("https://api.orderour.com/api/centens").then(function (res) {
+      console.log("get的回应", res.data.data.length);
+
+      that.num = res.data.data.length;
+    });
+  },
+};
 </script>
 <style scoped>
 .Shouyue {
